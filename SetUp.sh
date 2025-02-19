@@ -3,7 +3,7 @@
 if [ $1 != "-No--Installs"]; then 
     sudo apt update #update the system in general
     sudo apt install g++-multilib gcc-multilib #download all multyple libraries for 32 , 64 object/library files so 32 executables can generate
-
+    sudo apt install build-essential
     sudo apt install make #install make for Makefiles
     sudo apt install gdb  #install gnu Debbuger
     sudo apt install gcc  #install gnu compilers collection

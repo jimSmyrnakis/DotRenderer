@@ -7,3 +7,4 @@ cd ./Independences/Glad
 ./clear.sh
 cd ../..
 echo "Glad cleared" 
+
