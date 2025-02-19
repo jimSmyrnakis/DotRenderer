@@ -12,6 +12,7 @@ if [ $1 != "-No--Installs"]; then
 fi 
 #generate all Independencies
 echo "Generate all Independencies"
+#generate Glad
 echo "Generating Glad ..."
 cd ./Independences/Glad
 ./build.sh
@@ -21,5 +22,17 @@ if [ $? != "0" ]; then
 fi 
 cd ../..
 echo "Glad generated Succesfully" 
+#clone to the latest version of DotPlatform
+echo "Generate DotPlatform ..."
+cd ./Independences/
+git clone --recurse-submodules "https://github.com/jimSmyrnakis/DotPlatform"
+if [ $? != 0 ]; then 
+    echo "Failed to clone DotPlatform Independency :( !!!"
+    exit 1;
+fi
+cd ../.
+echo "DotPlatform generated Succesfully"
+
+
 
 

@@ -1,0 +1,3 @@
+[submodule "Independences/DotPlatform"]
+	path = Independences/DotPlatform
+	url = https://github.com/jimSmyrnakis/DotPlatform
